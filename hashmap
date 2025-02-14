@@ -1,0 +1,24 @@
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+       HashMap<String,String>map=new HashMap();
+        map.put("TN","TAMILNADU");
+        map.put("KA","KARNATAKA");
+        map.put("KL","KERALA");
+        
+        System.out.println(map.get("TN"));
+        System.out.println(map.get("KL"));
+        
+        System.out.println(map.getorDefault("AP","not found"));
+        
+        System.out.println(map.get("TN"));
+        
+        System.out.println(map.keySet());
+        System.out.println(map.values());
+        
+        map.remove("KL");
+         
+        System.out.println(map.containsKey("AP"));
+        
+    }
+}
